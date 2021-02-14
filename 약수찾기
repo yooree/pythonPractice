@@ -1,0 +1,11 @@
+N = 120
+i = 1
+count = 0
+
+while i <= N: # i가 120이하 일때 계속 반복하여 실행
+    if N % i == 0: # N의 약수를 체킹, N을 i로 나누었을 때, 0이라면
+        print(i) # i를 출력
+        count += 1 # i가 N의 약수인 경우 현재의 count에 1을 더한다.
+    i += 1
+    
+print("{}의 약수는 총 {}개입니다.".format(N, count))
